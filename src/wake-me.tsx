@@ -27,7 +27,7 @@ export const WakeMe = ({
   tfScriptUrl = "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js",
   speechCommandsScriptUrl = "https://cdn.jsdelivr.net/npm/@tensorflow-models/speech-commands/dist/speech-commands.min.js",
   modelBaseUrl = "https://cdn.jsdelivr.net/npm/wake-me@latest/public/snap/",
-  snapThreshold = 1,
+  snapThreshold = 0.95,
 }: WakeMeProps) => {
   // Reference to store cleanup function for the audio recognition
   const cleanupRef = useRef<(() => void) | null>(null);

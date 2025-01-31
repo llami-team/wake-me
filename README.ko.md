@@ -48,14 +48,14 @@ function App() {
 
 ## Props
 
-| Prop                    | 타입                    | 필수 여부 | 설명                                                                        |
-| ----------------------- | ----------------------- | --------- | --------------------------------------------------------------------------- |
-| onSnap                  | () => void              | 선택      | 스냅이 감지되었을 때 호출되는 콜백                                          |
-| onNoise                 | (score: number) => void | 선택      | 노이즈가 감지되었을 때 호출되는 콜백                                        |
-| modelBaseUrl            | string                  | 선택      | 모델 파일이 위치한 기본 URL (기본값: '/snap/')                              |
-| tfScriptUrl             | string                  | 선택      | TensorFlow.js 스크립트 URL                                                  |
-| speechCommandsScriptUrl | string                  | 선택      | Speech Commands 스크립트 URL                                                |
-| snapThreshold           | number                  | 선택      | 감지 민감도 임계값 (기본값: 1). 감지가 잘 되지 않는 경우 0.9로 낮출 수 있음 |
+| Prop                    | 타입                    | 필수 여부 | 설명                                                                           |
+| ----------------------- | ----------------------- | --------- | ------------------------------------------------------------------------------ |
+| onSnap                  | () => void              | 선택      | 스냅이 감지되었을 때 호출되는 콜백                                             |
+| onNoise                 | (score: number) => void | 선택      | 노이즈가 감지되었을 때 호출되는 콜백                                           |
+| modelBaseUrl            | string                  | 선택      | 모델 파일이 위치한 기본 URL (기본값: '/snap/')                                 |
+| tfScriptUrl             | string                  | 선택      | TensorFlow.js 스크립트 URL                                                     |
+| speechCommandsScriptUrl | string                  | 선택      | Speech Commands 스크립트 URL                                                   |
+| snapThreshold           | number                  | 선택      | 감지 민감도 임계값 (기본값: 0.95). 감지가 잘 되지 않는 경우 0.9로 낮출 수 있음 |
 
 ## 모델 파일 설정
 

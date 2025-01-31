@@ -48,14 +48,14 @@ function App() {
 
 ## Props
 
-| Prop                    | Type                    | Required | Description                                                                                              |
-| ----------------------- | ----------------------- | -------- | -------------------------------------------------------------------------------------------------------- |
-| onSnap                  | () => void              | Optional | Callback when snap is detected                                                                           |
-| onNoise                 | (score: number) => void | Optional | Callback when noise is detected                                                                          |
-| modelBaseUrl            | string                  | Optional | Base URL for model files (default: '/snap/')                                                             |
-| tfScriptUrl             | string                  | Optional | TensorFlow.js script URL                                                                                 |
-| speechCommandsScriptUrl | string                  | Optional | Speech Commands script URL                                                                               |
-| snapThreshold           | number                  | Optional | Detection sensitivity threshold (default: 1). Can be lowered to 0.9 if detection is not sensitive enough |
+| Prop                    | Type                    | Required | Description                                                                                                 |
+| ----------------------- | ----------------------- | -------- | ----------------------------------------------------------------------------------------------------------- |
+| onSnap                  | () => void              | Optional | Callback when snap is detected                                                                              |
+| onNoise                 | (score: number) => void | Optional | Callback when noise is detected                                                                             |
+| modelBaseUrl            | string                  | Optional | Base URL for model files (default: '/snap/')                                                                |
+| tfScriptUrl             | string                  | Optional | TensorFlow.js script URL                                                                                    |
+| speechCommandsScriptUrl | string                  | Optional | Speech Commands script URL                                                                                  |
+| snapThreshold           | number                  | Optional | Detection sensitivity threshold (default: 0.95). Can be lowered to 0.9 if detection is not sensitive enough |
 
 ## Model File Setup
 
