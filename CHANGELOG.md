@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://github.com/llami-team/wake-me/compare/v1.2.0...v1.2.1) (2025-01-31)
+
+
+### Bug Fixes
+
+* Fixed misleading import statements in descriptions ([71e4541](https://github.com/llami-team/wake-me/commit/71e45416eaac90c8f6934a368f91eabec3be2578))
+
 # [1.2.0](https://github.com/llami-team/wake-me/compare/v1.1.0...v1.2.0) (2025-01-31)
 
 
