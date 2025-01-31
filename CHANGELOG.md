@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.2.0](https://github.com/llami-team/wake-me/compare/v1.1.0...v1.2.0) (2025-01-31)
+
+
+### Features
+
+* Lower snapThreshold to 0.95 (for ease of demonstration) ([a4df4f3](https://github.com/llami-team/wake-me/commit/a4df4f39eae7faba26b2b143f111b227083a74f3))
+
 # [1.1.0](https://github.com/llami-team/wake-me/compare/v1.0.3...v1.1.0) (2025-01-31)
 
 
