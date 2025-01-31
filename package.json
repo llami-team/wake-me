@@ -1,7 +1,7 @@
 {
   "name": "wake-me",
   "version": "1.0.3",
-  "description": "A simple React component library",
+  "description": "A React component library powered by TensorFlow.js for AI-based sound detection and recognition",
   "main": "dist/wake-me.js",
   "module": "dist/wake-me.mjs",
   "types": "dist/wake-me.d.ts",
@@ -17,7 +17,15 @@
   "keywords": [
     "react",
     "component",
-    "library"
+    "library",
+    "tensorflow",
+    "ai",
+    "machine-learning",
+    "sound-detection",
+    "wake-me",
+    "wake-snap",
+    "wake-word",
+    "wake-finger-snap"
   ],
   "author": "llami-team",
   "license": "MIT",

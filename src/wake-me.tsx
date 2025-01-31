@@ -11,6 +11,8 @@ export interface WakeMeProps {
   speechCommandsScriptUrl?: string;
   /** Base URL where model files are located (default: https://cdn.jsdelivr.net/npm/wake-me@latest/public/snap/) */
   modelBaseUrl?: string;
+  /** Threshold for snap detection (default: 1) */
+  snapThreshold?: number;
 }
 
 /**
@@ -25,6 +27,7 @@ export const WakeMe = ({
   tfScriptUrl = "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js",
   speechCommandsScriptUrl = "https://cdn.jsdelivr.net/npm/@tensorflow-models/speech-commands/dist/speech-commands.min.js",
   modelBaseUrl = "https://cdn.jsdelivr.net/npm/wake-me@latest/public/snap/",
+  snapThreshold = 1,
 }: WakeMeProps) => {
   // Reference to store cleanup function for the audio recognition
   const cleanupRef = useRef<(() => void) | null>(null);
@@ -85,7 +88,8 @@ export const WakeMe = ({
         const snapScore = scores[snapLabelIndex];
         const fingerSnapScore = scores[fingerSnapLabelIndex];
         // Trigger callbacks based on detection confidence
-        if (snapScore >= 0.9 || fingerSnapScore >= 0.9) onSnap?.();
+        if (snapScore >= snapThreshold || fingerSnapScore >= snapThreshold)
+          onSnap?.();
         else onNoise?.(snapScore);
       },
       {

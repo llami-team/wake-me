@@ -23,11 +23,25 @@ const App = () => {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-purple-50 p-8">
       <div className="max-w-2xl mx-auto">
         <header className="text-center mb-12">
+          <img
+            src="https://static.llami.net/image/llami-logo.webp"
+            alt="LLAMI Logo"
+            className="w-16 h-16 mx-auto mb-4"
+          />
           <h1 className="text-4xl font-bold text-gray-800 mb-2">
             Wake Me Test
           </h1>
           <p className="text-gray-600">
             Snap your fingers or clap to test the detection!
+          </p>
+          <p className="text-sm text-gray-500 mt-2">
+            Powered by{" "}
+            <a
+              href="https://llami.net"
+              className="text-purple-600 hover:text-purple-700"
+            >
+              LLAMI Team
+            </a>
           </p>
         </header>
 
