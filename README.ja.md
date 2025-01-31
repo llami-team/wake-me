@@ -4,7 +4,7 @@
   <img src="https://static.llami.net/image/llami-logo.webp" width="128" alt="LLAMI ロゴ">
 </p>
 
-手拍子やフィンガースナップを検出する AI ベースの React コンポーネントライブラリです。TensorFlow.js ベースの機械学習モデルを使用して、リアルタイムで正確に音を分析します。
+手拍子やフィンガースナップを検出する AI ベースの Browser コンポーネントライブラリです。TensorFlow.js ベースの機械学習モデルを使用して、リアルタイムで正確に音を分析します。
 
 > このプロジェクトは[LLAMI Team](https://llami.net)が提供しています。
 

@@ -1,7 +1,7 @@
 {
   "name": "wake-me",
   "version": "1.2.1",
-  "description": "A React component library powered by TensorFlow.js for AI-based sound detection and recognition",
+  "description": "Browser component library powered by TensorFlow.js for AI-based sound detection and recognition",
   "main": "dist/wake-me.js",
   "module": "dist/wake-me.mjs",
   "types": "dist/wake-me.d.ts",

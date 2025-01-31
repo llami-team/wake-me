@@ -4,7 +4,7 @@
   <img src="https://static.llami.net/image/llami-logo.webp" width="128" alt="LLAMI 로고">
 </p>
 
-손뼉 소리나 핑거스냅을 감지하는 AI 기반 React 컴포넌트 라이브러리입니다. TensorFlow.js를 활용한 머신러닝 모델을 통해 정확하고 실시간으로 소리를 감지하고 분석합니다.
+손뼉 소리나 핑거스냅을 감지하는 AI 기반 브라우저 컴포넌트 라이브러리입니다. TensorFlow.js를 활용한 머신러닝 모델을 통해 정확하고 실시간으로 소리를 감지하고 분석합니다.
 
 > 이 프로젝트는 [LLAMI Team](https://llami.net)에서 제공합니다.
 

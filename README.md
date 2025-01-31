@@ -4,7 +4,7 @@
   <img src="https://static.llami.net/image/llami-logo.webp" width="128" alt="LLAMI Logo">
 </p>
 
-AI-based React component library that detects clapping sounds or finger snaps. Using a TensorFlow.js-based machine learning model, it accurately analyzes sounds in real-time.
+AI-based browser component library that detects clapping sounds or finger snaps. Using a TensorFlow.js-based machine learning model, it accurately analyzes sounds in real-time.
 
 > This project is provided by [LLAMI Team](https://llami.net)
 
