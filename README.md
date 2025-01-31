@@ -37,6 +37,50 @@ Try out WakeSnap in your browser: [Online Demo](https://stackblitz.com/edit/wake
 - 🎯 High-accuracy clap/snap recognition
 - 🪶 Lightweight and easy to use
 
+## Framework Support
+
+WakeMe is designed to be framework-agnostic! While it's primarily a React component, you can use it with:
+
+- React
+- Vanilla JavaScript
+- Angular
+- Vue.js
+- Any other JavaScript framework
+
+### React Usage
+
+```tsx
+import { WakeMe } from "wake-me";
+
+function App() {
+  return <WakeMe onSnap={() => console.log("Snap detected!")} />;
+}
+```
+
+### Vanilla JavaScript Usage
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/wake-me@latest/dist/vanilla/vanilla.global.js"></script>
+<script>
+  const wakeMe = new WakeMe({
+    onSnap: () => {
+      // Handle snap event
+      console.log("Snap!");
+    },
+    onNoise: (score) => {
+      // Handle noise level
+      console.log("Noise level:", score);
+    },
+  });
+
+  // Start listening
+  wakeMe.init();
+
+  // Clean up when done
+  // wakeMe.destroy();
+</script>
+```
+
 ## Installation
 
 ```bash

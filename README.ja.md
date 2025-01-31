@@ -77,6 +77,50 @@ function App() {
 }
 ```
 
+## フレームワークサポート
+
+WakeMe はフレームワークに依存しないように設計されています！React コンポーネントとして提供されていますが、以下の環境でも使用できます：
+
+- React
+- バニラ JavaScript
+- Angular
+- Vue.js
+- その他すべての JavaScript フレームワーク
+
+### React での使用方法
+
+```tsx
+import { WakeMe } from "wake-me";
+
+function App() {
+  return <WakeMe onSnap={() => console.log("スナップを検出しました！")} />;
+}
+```
+
+### バニラ JavaScript での使用方法
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/wake-me@latest/dist/vanilla/vanilla.global.js"></script>
+<script>
+  const wakeMe = new WakeMe({
+    onSnap: () => {
+      // スナップイベントの処理
+      console.log("スナップ！");
+    },
+    onNoise: (score) => {
+      // ノイズレベルの処理
+      console.log("ノイズレベル:", score);
+    },
+  });
+
+  // 検出開始
+  wakeMe.init();
+
+  // 使用終了時のクリーンアップ
+  // wakeMe.destroy();
+</script>
+```
+
 ## プロパティ
 
 | プロパティ名            | 型                        | 必須   | 説明                                                                                    |

@@ -55,6 +55,50 @@ function App() {
 }
 ```
 
+## 프레임워크 지원
+
+WakeMe는 프레임워크에 구애받지 않도록 설계되었습니다! React 컴포넌트로 제공되지만, 다음과 같은 환경에서도 사용할 수 있습니다:
+
+- React
+- 바닐라 JavaScript
+- Angular
+- Vue.js
+- 기타 모든 JavaScript 프레임워크
+
+### React 사용법
+
+```tsx
+import { WakeMe } from "wake-me";
+
+function App() {
+  return <WakeMe onSnap={() => console.log("스냅이 감지되었습니다!")} />;
+}
+```
+
+### 바닐라 JavaScript 사용법
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/wake-me@latest/dist/vanilla/vanilla.global.js"></script>
+<script>
+  const wakeMe = new WakeMe({
+    onSnap: () => {
+      // 스냅 이벤트 처리
+      console.log("스냅!");
+    },
+    onNoise: (score) => {
+      // 노이즈 레벨 처리
+      console.log("노이즈 레벨:", score);
+    },
+  });
+
+  // 감지 시작
+  wakeMe.init();
+
+  // 사용 완료 시 정리
+  // wakeMe.destroy();
+</script>
+```
+
 ## Props
 
 | Prop                    | 타입                    | 필수 여부 | 설명                                                                           |
