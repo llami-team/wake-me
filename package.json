@@ -29,6 +29,11 @@
     "wake-finger-snap"
   ],
   "author": "llami-team",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/llami-team/wake-me.git"
+  },
+  "homepage": "https://llami.net",
   "license": "MIT",
   "peerDependencies": {
     "react": ">=16.8.0",
