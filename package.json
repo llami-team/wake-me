@@ -1,0 +1,57 @@
+{
+  "name": "wake-me",
+  "version": "1.0.1",
+  "description": "A simple React component library",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "public"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "VITE_CJS_IGNORE_WARNING=true vite",
+    "release": "release-it"
+  },
+  "keywords": [
+    "react",
+    "component",
+    "library"
+  ],
+  "author": "llami-team",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "release-it": "^17.0.3",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3",
+    "vite": "^6.0.11"
+  },
+  "release-it": {
+    "git": {
+      "commitMessage": "chore: release v${version}",
+      "tagName": "v${version}"
+    },
+    "npm": {
+      "publish": true
+    },
+    "github": {
+      "release": true
+    },
+    "plugins": {
+      "@release-it/conventional-changelog": {
+        "preset": "angular",
+        "infile": "CHANGELOG.md"
+      }
+    }
+  }
+}
