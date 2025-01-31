@@ -39,10 +39,10 @@ yarn add wake-me
 ## 사용법
 
 ```tsx
-import { WakeSnap } from "wake-me";
+import { WakeMe } from "wake-me";
 
 function App() {
-  return <WakeSnap onSnap={() => console.log("스냅이 감지되었습니다!")} />;
+  return <WakeMe onSnap={() => console.log("스냅이 감지되었습니다!")} />;
 }
 ```
 
@@ -99,11 +99,11 @@ your-nextjs-project/
 ### 3. 컴포넌트에서 사용하기
 
 ```tsx
-import { WakeSnap } from "wake-me";
+import { WakeMe } from "wake-me";
 
 function App() {
   return (
-    <WakeSnap
+    <WakeMe
       onSnap={() => console.log("스냅이 감지되었습니다!")}
       // 스크립트 URL 설정
       tfScriptUrl="/scripts/tf.min.js"

@@ -39,10 +39,10 @@ yarn add wake-me
 ## Usage
 
 ```tsx
-import { WakeSnap } from "wake-me";
+import { WakeMe } from "wake-me";
 
 function App() {
-  return <WakeSnap onSnap={() => console.log("Snap detected!")} />;
+  return <WakeMe onSnap={() => console.log("Snap detected!")} />;
 }
 ```
 
@@ -99,11 +99,11 @@ your-nextjs-project/
 ### 3. Using in Component
 
 ```tsx
-import { WakeSnap } from "wake-me";
+import { WakeMe } from "wake-me";
 
 function App() {
   return (
-    <WakeSnap
+    <WakeMe
       onSnap={() => console.log("Snap detected!")}
       // Set script URLs
       tfScriptUrl="/scripts/tf.min.js"

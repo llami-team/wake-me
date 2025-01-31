@@ -115,7 +115,7 @@ export const WakeMe = ({
         const cleanup = await detectSnap();
         cleanupRef.current = cleanup;
       } catch (error) {
-        console.error("Failed to initialize WakeSnap:", error);
+        console.error("Failed to initialize WakeMe:", error);
       }
     };
 

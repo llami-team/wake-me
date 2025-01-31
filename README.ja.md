@@ -39,10 +39,10 @@ yarn add wake-me
 ## 使用方法
 
 ```tsx
-import { WakeSnap } from "wake-me";
+import { WakeMe } from "wake-me";
 
 function App() {
-  return <WakeSnap onSnap={() => console.log("スナップを検出しました！")} />;
+  return <WakeMe onSnap={() => console.log("スナップを検出しました！")} />;
 }
 ```
 
