@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.4.0](https://github.com/llami-team/wake-me/compare/v1.3.0...v1.4.0) (2025-01-31)
+
+
+### Features
+
+* If the script path is intentionally provided as null, the script will not be loaded. ([1bd9d68](https://github.com/llami-team/wake-me/commit/1bd9d68f7d7ccc37948a0fb2423b8f50911a5a71))
+
 # [1.3.0](https://github.com/llami-team/wake-me/compare/v1.2.1...v1.3.0) (2025-01-31)
 
 
