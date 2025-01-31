@@ -1,6 +1,6 @@
 {
   "name": "wake-me",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple React component library",
   "main": "dist/wake-me.js",
   "module": "dist/wake-me.mjs",
