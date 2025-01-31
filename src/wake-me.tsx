@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 
-export interface WakeSnapProps {
+export interface WakeMeProps {
   onSnap?: () => void;
   onNoise?: (matchScore: number) => void;
   /** TensorFlow.js 스크립트 URL (기본값: https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js) */
@@ -14,13 +14,13 @@ export interface WakeSnapProps {
 /**
  * 텐서플로우 기반 손뼉 또는 핑거스냅 인식 React 컴포넌트
  */
-export const WakeSnap = ({
+export const WakeMe = ({
   onSnap,
   onNoise,
   tfScriptUrl = "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js",
   speechCommandsScriptUrl = "https://cdn.jsdelivr.net/npm/@tensorflow-models/speech-commands/dist/speech-commands.min.js",
   modelBaseUrl = "/snap/",
-}: WakeSnapProps) => {
+}: WakeMeProps) => {
   const cleanupRef = useRef<(() => void) | null>(null);
 
   const loadScript = (src: string): Promise<void> => {
@@ -98,3 +98,5 @@ export const WakeSnap = ({
 
   return null;
 };
+
+export default WakeMe;
