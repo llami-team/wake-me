@@ -42,27 +42,20 @@ yarn add wake-me
 import { WakeSnap } from "wake-me";
 
 function App() {
-  return (
-    <WakeSnap
-      onSnap={() => console.log("Snap detected!")}
-      onNoise={(score) => console.log("Noise score:", score)}
-      // Optional: Set custom model URL
-      modelBaseUrl="/your-model-path/"
-    />
-  );
+  return <WakeSnap onSnap={() => console.log("Snap detected!")} />;
 }
 ```
 
 ## Props
 
-| Prop                    | Type                    | Required | Description                                  |
-| ----------------------- | ----------------------- | -------- | -------------------------------------------- |
-| onSnap                  | () => void              | Optional | Callback when snap is detected               |
-| onNoise                 | (score: number) => void | Optional | Callback when noise is detected              |
-| modelBaseUrl            | string                  | Optional | Base URL for model files (default: '/snap/') |
-| tfScriptUrl             | string                  | Optional | TensorFlow.js script URL                     |
-| speechCommandsScriptUrl | string                  | Optional | Speech Commands script URL                   |
-| snapThreshold          | number                  | Optional | Detection sensitivity threshold (default: 1). Can be lowered to 0.9 if detection is not sensitive enough |
+| Prop                    | Type                    | Required | Description                                                                                              |
+| ----------------------- | ----------------------- | -------- | -------------------------------------------------------------------------------------------------------- |
+| onSnap                  | () => void              | Optional | Callback when snap is detected                                                                           |
+| onNoise                 | (score: number) => void | Optional | Callback when noise is detected                                                                          |
+| modelBaseUrl            | string                  | Optional | Base URL for model files (default: '/snap/')                                                             |
+| tfScriptUrl             | string                  | Optional | TensorFlow.js script URL                                                                                 |
+| speechCommandsScriptUrl | string                  | Optional | Speech Commands script URL                                                                               |
+| snapThreshold           | number                  | Optional | Detection sensitivity threshold (default: 1). Can be lowered to 0.9 if detection is not sensitive enough |
 
 ## Model File Setup
 

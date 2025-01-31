@@ -42,14 +42,7 @@ yarn add wake-me
 import { WakeSnap } from "wake-me";
 
 function App() {
-  return (
-    <WakeSnap
-      onSnap={() => console.log("スナップを検出しました！")}
-      onNoise={(score) => console.log("ノイズスコア:", score)}
-      // オプション: カスタムモデルURLの設定
-      modelBaseUrl="/your-model-path/"
-    />
-  );
+  return <WakeSnap onSnap={() => console.log("スナップを検出しました！")} />;
 }
 ```
 
@@ -77,14 +70,14 @@ function App() {
 
 ## プロパティ
 
-| プロパティ名            | 型                        | 必須   | 説明                                                   |
-| ----------------------- | ------------------------- | ------ | ------------------------------------------------------ |
-| onSnap                  | `() => void`              | はい   | スナップ音が検出された時に呼び出されるコールバック関数 |
-| onNoise                 | `(score: number) => void` | いいえ | ノイズが検出された時に呼び出されるコールバック関数     |
-| tfScriptUrl             | `string`                  | いいえ | TensorFlow.js スクリプトの URL                         |
-| speechCommandsScriptUrl | `string`                  | いいえ | Speech Commands スクリプトの URL                       |
-| modelBaseUrl            | `string`                  | いいえ | カスタムモデルのベース URL                             |
-| snapThreshold          | `number`                  | いいえ | 検出感度のしきい値（デフォルト: 1）。検出が不十分な場合は0.9に下げることができます |
+| プロパティ名            | 型                        | 必須   | 説明                                                                                 |
+| ----------------------- | ------------------------- | ------ | ------------------------------------------------------------------------------------ |
+| onSnap                  | `() => void`              | はい   | スナップ音が検出された時に呼び出されるコールバック関数                               |
+| onNoise                 | `(score: number) => void` | いいえ | ノイズが検出された時に呼び出されるコールバック関数                                   |
+| tfScriptUrl             | `string`                  | いいえ | TensorFlow.js スクリプトの URL                                                       |
+| speechCommandsScriptUrl | `string`                  | いいえ | Speech Commands スクリプトの URL                                                     |
+| modelBaseUrl            | `string`                  | いいえ | カスタムモデルのベース URL                                                           |
+| snapThreshold           | `number`                  | いいえ | 検出感度のしきい値（デフォルト: 1）。検出が不十分な場合は 0.9 に下げることができます |
 
 ## ライセンス
 
