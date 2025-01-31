@@ -10,6 +10,15 @@ AI-based React component library that detects clapping sounds or finger snaps. U
 
 _Read this in other languages: [한국어](README.ko.md), [日本語](README.ja.md)_
 
+## Online Demo
+
+Try out WakeSnap in your browser: [Online Demo](https://stackblitz.com/edit/wake-me)
+
+⚠️ **Audio Setup Recommendation**:
+
+- For best results, please use external speakers and microphone
+- The detection may not work properly with earphones/earbuds
+
 ## Use Cases
 
 - 🎙️ **Voice Recognition AI Systems**: As a wake word alternative to activate AI using claps or snaps
