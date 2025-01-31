@@ -12,12 +12,13 @@ _Read this in other languages: [한국어](README.ko.md), [日本語](README.ja.
 
 ## Online Demo
 
-Try out WakeSnap in your browser: [Online Demo](https://stackblitz.com/edit/wake-me)
+Try out WakeSnap in your browser: [Online Demo](https://codepen.io/hmmhmmhm/full/RNbdjeV)
 
 ⚠️ **Audio Setup Recommendation**:
 
 - For best results, please use external speakers and microphone
 - The detection may not work properly with earphones/earbuds
+- Works on both desktop and mobile devices!
 
 ## Use Cases
 
