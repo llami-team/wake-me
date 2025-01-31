@@ -6,9 +6,9 @@ export interface WakeMeProps {
   /** Callback function triggered when noise is detected, provides a match score */
   onNoise?: (matchScore: number) => void;
   /** TensorFlow.js script URL (default: https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js) */
-  tfScriptUrl?: string;
+  tfScriptUrl?: string | null;
   /** Speech Commands script URL (default: https://cdn.jsdelivr.net/npm/@tensorflow-models/speech-commands/dist/speech-commands.min.js) */
-  speechCommandsScriptUrl?: string;
+  speechCommandsScriptUrl?: string | null;
   /** Base URL where model files are located (default: https://cdn.jsdelivr.net/npm/wake-me@latest/public/snap/) */
   modelBaseUrl?: string;
   /** Threshold for snap detection (default: 1) */
@@ -110,8 +110,8 @@ export const WakeMe = ({
   useEffect(() => {
     const init = async () => {
       try {
-        await loadScript(tfScriptUrl);
-        await loadScript(speechCommandsScriptUrl);
+        if (tfScriptUrl) await loadScript(tfScriptUrl);
+        if (speechCommandsScriptUrl) await loadScript(speechCommandsScriptUrl);
         const cleanup = await detectSnap();
         cleanupRef.current = cleanup;
       } catch (error) {
