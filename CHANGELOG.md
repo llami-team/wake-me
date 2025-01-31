@@ -1,5 +1,13 @@
 # Changelog
 
+# [1.3.0](https://github.com/llami-team/wake-me/compare/v1.2.1...v1.3.0) (2025-01-31)
+
+
+### Features
+
+* Add vanilla usage examples ([c6489fe](https://github.com/llami-team/wake-me/commit/c6489fe318ca7eb9d0d1918e35b4c70d47aabf8c))
+* Add vanilla usage examples ([534ef9d](https://github.com/llami-team/wake-me/commit/534ef9dee86f059ba406ff6602f136df5b92c2b7))
+
 ## [1.2.1](https://github.com/llami-team/wake-me/compare/v1.2.0...v1.2.1) (2025-01-31)
 
 
