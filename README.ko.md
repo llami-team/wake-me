@@ -1,4 +1,4 @@
-# WakeSnap
+# Wake Me
 
 <p align="center">
   <img src="https://static.llami.net/image/llami-logo.webp" width="128" alt="LLAMI 로고">

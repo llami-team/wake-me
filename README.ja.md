@@ -1,4 +1,4 @@
-# WakeSnap
+# Wake Me
 
 <p align="center">
   <img src="https://static.llami.net/image/llami-logo.webp" width="128" alt="LLAMI ロゴ">
@@ -58,17 +58,17 @@ function App() {
 
 ## Next.js での使用
 
-Next.js プロジェクトで WakeSnap を使用する場合、必要なスクリプトとモデルファイルを直接組み込む必要があります：
+Next.js プロジェクトで Wake Me を使用する場合、必要なスクリプトとモデルファイルを直接組み込む必要があります：
 
 1. `public`ディレクトリにモデルファイルをコピーします。
-2. スクリプト URL を CDN から指定します：
+2. スクリプト URL を CDN から指定します:
 
 ```tsx
-import { WakeSnap } from "wake-me";
+import { WakeMe } from "wake-me";
 
 function App() {
   return (
-    <WakeSnap
+    <WakeMe
       tfScriptUrl="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js"
       speechCommandsScriptUrl="https://cdn.jsdelivr.net/npm/@tensorflow-models/speech-commands/dist/speech-commands.min.js"
       modelBaseUrl="/snap/"

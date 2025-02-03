@@ -1,4 +1,4 @@
-# WakeSnap
+# Wake Me
 
 <p align="center">
   <img src="https://static.llami.net/image/llami-logo.webp" width="128" alt="LLAMI Logo">
@@ -8,11 +8,11 @@ AI-based browser component library that detects clapping sounds or finger snaps.
 
 > This project is provided by [LLAMI Team](https://llami.net)
 
-_Read this in other languages: [한국어](README.ko.md), [日本語](README.ja.md)_
+_Read this in other languages: [English](README.md), [日本語](README.ja.md)_
 
 ## Online Demo
 
-Try out WakeSnap in your browser: [Online Demo](https://codepen.io/hmmhmmhm/full/RNbdjeV)
+Try out Wake Me in your browser: [Online Demo](https://codepen.io/hmmhmmhm/full/RNbdjeV)
 
 ⚠️ **Audio Setup Recommendation**:
 
